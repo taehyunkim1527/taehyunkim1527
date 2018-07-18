@@ -5,6 +5,11 @@ baseurl:      "https://taehyunkim1527.github.io/taehyunkim1527/"
 paginate:     1
 locale:       "en"
 
+# Sub pages
+profile_url:  "https://taehyunkim1527.github.io/taehyunkim1527/profile"
+publication_url:"https://taehyunkim1527.github.io/taehyunkim1527/publication"
+posts_url:    "https://taehyunkim1527.github.io/taehyunkim1527/posts"
+
 # About/contact
 author:
   name:       Taehyun Kim
