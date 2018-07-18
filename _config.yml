@@ -1,14 +1,14 @@
 # Setup
-title:        Project or Site name
+title:        taehyun_blog
 tagline:      A responsive theme for your project on GitHub Pages
-baseurl:      ""
+baseurl:      "https://taehyunkim1527.github.io/taehyunkim1527/"
 paginate:     1
 locale:       "en"
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       Taehyun Kim
+  url:        https://taehyunkim1527.github.io/taehyunkim1527/ 
 
 # Gems
 gems:
