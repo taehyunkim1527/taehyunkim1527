@@ -50,6 +50,7 @@
         <h2>Ph.D. Candidate @ School of Electrical Engineering, KAIST</h2>
         <h3>Room 820, N1 ITC-Building</h3>
         <h3>291 Daehak-ro, Yuseong-gu, Daejeon 34141, Republic of Korea</h3>
+        <h3>Contact: taehyunkim1527@gmail.com</h3>
       </div>
     </div><!--// .yui-gc -->
     <hr>
@@ -62,47 +63,63 @@
     Systems support for deep learning, scalable graph neural network, scalable networked systems
     <hr>
     <h3>Education</h3>
-    <li>
       Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea
-      Ph.D. student, Electrical Engineering 				Feb 	2020 –
-      -	Advisor: KyoungSoo Park
-      M.S. student, Electrical Engineering 				Feb 	2017 – 2019
-      -	Advisor: KyoungSoo Park
-    </li>
-    <li>
+      <ul>
+        <li> Ph.D. student, Electrical Engineering  -	Advisor: KyoungSoo Park</li>
+        <ul>
+          Feb 	2019 –
+        </ul>
+        <li> M.S. student, Electrical Engineering  -	Advisor: KyoungSoo Park</li>
+        <ul>
+          Feb 	2017 – 2019
+        </ul>
+      </ul>
       Yonsei University, Seoul, Republic of Korea
-      B.S., Electrical Engineering					Feb 	2011 – 2017
-    </li>
+      <ul>
+        <li> B.S. student, Electrical Engineering</li>
+        <ul>
+          Feb 	2011 – 2017
+        </ul>
+      </ul>
     <hr>
     <h3>Research Projects</h3>
-    CoDDL: Dynamic Resource Sharing for Distributed Deep Learning on the Multi-tenant Cluster May 2017–
-    CoDDL is a job coordinator on a multi-tenant cluster specialized for distributed deep learning. 
-    It supports auto-parallelization to run each deep learning job on multiple GPUs and 
-    fast re-adjustment of the number of GPUs for a job to let it yield or add GPUs in runtime. 
-    Therefore, even if some jobs come in and out frequently, schedulers can maintain high utilization 
-    of cluster resources by calculating the best allocation consistently. 
-    We have built a stable version of CoDDL. This is an on-going project.
-
-    Efficient Data Pipeline for Graph Neural Network Dec 2019–
-    Recent large graph data structure has more than billions of nodes and hundreds of billions of edges.
-    Therefore, GNN frameworks can’t load the entire graph topology on local memory and it harms 
-    the training throughput. Some frameworks by-paths this challenge by sampling the graph or 
-    use networked shared memory over multiple servers but they can be less accurate or 
-    a waste of resources. I’m conducting research on designing a graph compression algorithm and 
-    efficient pipelining to make GNN training on a large graph more efficient. 
-    This is an on-going project.
+      <b>CoDDL</b>
+      <ul>
+        CoDDL is a job coordinator on a multi-tenant cluster specialized for distributed deep learning. 
+        In order to utilize the resources efficiently even if new jobs starts and existing jobs finish 
+        randomly, we should re-distribute the GPUs to jobs whenever necessary. In addition to frequent 
+        re-distribution, it is important to take account of lengths and throughput scalability of jobs 
+        that varies from model to model. CoDDL designs a scheduling algorithm to improve the job completion 
+        time and fairness with above considerations and implements system supports for frequent 
+        re-distribution. We have built a stable version of CoDDL. This is an on-going project.
+      </ul>
+    </br>
+      <b>Efficient Data Pipeline for Graph Neural Network</b>
+      <ul>
+        Recently, large graph data has more than billions of nodes and hundreds of billions of edges. 
+        However, GNN frameworks should load the entire graph topology on local memory for high throughput, 
+        and therefore we can’t run a model if our memory can’t afford it. Some frameworks by-paths this 
+        challenge by sampling the graph or use networked shared memory over multiple servers but they can 
+        be less accurate or a waste of resources. I’m conducting a research on designing a graph 
+        compression algorithm and efficient pipelining to make GNN training on a large graph more efficient.
+        This is an on-going project.
+      </ul>
     <hr>
     <h3>Workshops & Posters</h3>
-    Changho Hwang, Taehyun Kim, Kyuho Son, Jinwoo Shin, and KyoungSoo Park.
-Efficient Resource Sharing for Distributed Deep Learning. In the 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI)-Poster 2018.
-    <hr>
+      <ul>
+        <li>Changho Hwang, <b>Taehyun Kim</b>, Kyuho Son, Jinwoo Shin, and KyoungSoo Park.</br>
+          "Efficient Resource Sharing for Distributed Deep Learning." In the 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI)-Poster 2018.
+        </li>
+      </ul>
+      <hr>
     <h3>Teaching Experience</h3>
-    Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea
+    Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea</br>
     Teaching Assistant, School of Electrical Engineering 
-    	EE209 Programming Structures for Electrical Engineering - Fall 2018, Spring 2020
-    	EE817 Advanced Networking and Cloud Systems - Spring 2018
-    	EE205 Data Structures and Algorithms - Fall 2019
-
+    <ul>
+      <li>EE209 Programming Structures for Electrical Engineering - Fall 2018, Spring 2020</li>
+      <li>EE817 Advanced Networking and Cloud Systems - Spring 2018</li>
+      <li>EE205 Data Structures and Algorithms - Fall 2019</li>
+    </ul>
     <hr>
     <h3>Skills</h3>
     C/C++, Python, TensorFlow, PyTorch, Unix/GNU Linux, Spark, LaTeX<hr>
