@@ -60,7 +60,7 @@
     Computing Systems Lab (NDSL) with my advisor, Prof. KyoungSoo Park, since Feb 2017.
     <hr>
     <h3>Research Interest</h3>
-    Systems support for deep learning, scalable graph neural network, scalable networked systems
+    Systems support for deep learning, privacy in neural network-based recommender system, scalable graph neural network, scalable networked systems
     <hr>
     <h3>Education</h3>
       Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea
@@ -83,15 +83,15 @@
       </ul>
     <hr>
     <h3>Research Projects</h3>
-      <b>CoDDL</b>
+      <b>Privacy-preserving recommendation system</b>
       <ul>
-        CoDDL is a job coordinator on a multi-tenant cluster specialized for distributed deep learning. 
-        In order to utilize the resources efficiently even if new jobs starts and existing jobs finish 
-        randomly, we should re-distribute the GPUs to jobs whenever necessary. In addition to frequent 
-        re-distribution, it is important to take account of lengths and throughput scalability of jobs 
-        that varies from model to model. CoDDL designs a scheduling algorithm to improve the job completion 
-        time and fairness with above considerations and implements system supports for frequent 
-        re-distribution. We have built a stable version of CoDDL. This is an on-going project.
+        Today's privacy-conscious users are no longer willing to share their personal information online,
+        so privacy-preserving neural network-based recommendation systems have been proposed to potentially 
+        benefit from personalized recommendations. However, in today's recommendation models, represented by
+        GNNs, which achieve very high recommendation performance by analyzing the relationships between a large
+        number of users and items, it is very difficult to simultaneously preserve the privacy of various entities 
+        that are highly intertwined in the computation process. This project proposes a system that efficiently preserves
+        privacy in such complex situations.
       </ul>
     </br>
       <b>Efficient Data Pipeline for Graph Neural Network</b>
@@ -102,16 +102,29 @@
         challenge by sampling the graph or use networked shared memory over multiple servers but they can 
         be less accurate or a waste of resources. I’m conducting a research on designing a graph 
         compression algorithm and efficient pipelining to make GNN training on a large graph more efficient.
-        This is an on-going project.
+      </ul>
+    </br>
+      <b>CoDDL</b>
+      <ul>
+        CoDDL is a job coordinator on a multi-tenant cluster specialized for distributed deep learning. 
+        In order to utilize the resources efficiently even if new jobs starts and existing jobs finish 
+        randomly, we should re-distribute the GPUs to jobs whenever necessary. In addition to frequent 
+        re-distribution, it is important to take account of lengths and throughput scalability of jobs 
+        that varies from model to model. CoDDL designs a scheduling algorithm to improve the job completion 
+        time and fairness with above considerations and implements system supports for frequent 
+        re-distribution. We have built a stable version of CoDDL.
       </ul>
     <hr>
     <h3>Publications</h3>
       <ul>
+        <li><b>Taehyun Kim</b>, Deondre Martin Ng, Junzhi Gong, Youngjin Kwon, Minlan Yu, KyoungSoo Park.</br>
+          "Rearchitecting the TCP Stack for I/O-Offloaded Content Delivery." In Proceedings of the 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI) April 2023.
+        </li>
         <li>Changho Hwang, <b>Taehyun Kim</b>, Sunghyun Kim, Jinwoo Shin, and KyoungSoo Park.</br>
           "Elastic Resource Sharing for Distributed Deep Learning." In Proceedings of the 18th USENIX Symposium on Networked Systems Design and Implementation (NSDI) April 2021.
         </li>
         <li><b>Taehyun Kim</b>, Changho Hwang, KyoungSoo Park, Zhipi Lin, Peng Cheng, Youshan Miao, Lingxiao Ma, and Yongqiang Xiong.</br>
-          "Accelerating GNN training with locality-aware partial execution." In Proceedings of the 12th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys) August 2021. <b><i>(Awarded Best Paper)<\i><\b>
+          "Accelerating GNN training with locality-aware partial execution." In Proceedings of the 12th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys) August 2021. <b>(Awarded Best Paper)<\b>
         </li>
       </ul>
       <hr>
@@ -119,6 +132,25 @@
       <ul>
         <li>Changho Hwang, <b>Taehyun Kim</b>, Kyuho Son, Jinwoo Shin, and KyoungSoo Park.</br>
           "Efficient Resource Sharing for Distributed Deep Learning." In the 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI)-Poster 2018.
+        </li>
+      </ul>
+      <hr>
+    <h3>Professional Experience</h3>
+      <ul>
+        <li> Research Intern @ Microsoft Research - 2020. 09 ~ 2021. 08
+        </li>
+      </ul>
+      <hr>
+    <h3>Awards and Honors</h3>
+      <ul>
+        <li> Samsung Humantech Paper Award Silver Prize, 2022 </li>
+        <li> Best paper award for ACM APSys, 2021 </li>
+      </ul>
+      <hr>
+    <h3>Invited Talks</h3>  
+      "Rearchitecting the TCP Stack for I/O-Offloaded Content Delivery."
+      <ul>
+        <li> San Jose, US - SmartNIC Summit - 2023.06
         </li>
       </ul>
       <hr>
@@ -130,9 +162,9 @@
       <li>EE817 Advanced Networking and Cloud Systems - Spring 2018</li>
       <li>EE205 Data Structures and Algorithms - Fall 2019</li>
     </ul>
-    <hr>
-    <h3>Skills</h3>
-    C/C++, Python, CUDA, AVX, TensorFlow, PyTorch, DGL, Unix/GNU Linux, FreeBSD, Spark, LaTeX<hr>
+<!--     <hr> -->
+<!--     <h3>Skills</h3> -->
+<!--     C/C++, Python, CUDA, AVX, TensorFlow, PyTorch, DGL, Unix/GNU Linux, FreeBSD, Spark, LaTeX<hr> -->
 
 
   </ul>
