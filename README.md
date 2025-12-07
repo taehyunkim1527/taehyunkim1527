@@ -1,146 +1,66 @@
-# plainwhite
+# Taehyun Kim - Portfolio Website
 
-Simplistic jekyll portfolio-style theme for writers.
+This is a personal portfolio website for **Taehyun Kim**, Systems Software Engineer.
+It is built with **Jekyll** and features a **Single Page Scroll** layout with a fixed sidebar.
 
-**Demo**: [thelehhman.com](https://thelehhman.com)
+## 🚀 How to Run Locally (내 컴퓨터에서 실행하기)
 
-![plainwhite theme preview](/screenshot.png)
+1. **Install Dependencies** (First time only)
+   ```bash
+   bundle install
+   ```
 
-## Installation on Github Pages
+2. **Start Server**
+   ```bash
+   bundle exec jekyll serve
+   ```
+   
+3. **Preview**
+   Open your browser and go to `http://localhost:4000`
 
-Add this line to your site's `_config.yml`:
+---
 
-```yaml
-remote_theme: thelehhman/plainwhite-jekyll
+## 📝 Editing Guide (수정 가이드)
+
+이 사이트는 크게 두 개의 파일만 수정하면 됩니다.
+
+### 1. 내용 수정 (Content) → `index.md`
+대부분의 텍스트(소개, 경력, 논문, 프로젝트 등)는 **`index.md`** 파일에 있습니다.
+이 파일을 열어서 해당 섹션의 텍스트를 수정하면 바로 반영됩니다.
+
+- **About Me**: 자기소개 수정
+- **Experience**: 경력 추가/수정 (Timeline 형태)
+- **Education**: 학력 수정
+- **Skills**: 기술 스택 수정
+- **Publications**: 논문 목록 수정
+- **Projects**: 프로젝트 설명 수정
+
+### 2. 사이드바 및 레이아웃 (Sidebar & Layout) → `_layouts/default.html`
+좌측 사이드바의 프로필, 메뉴, 디자인 스타일(CSS)은 **`_layouts/default.html`** 파일에 있습니다.
+
+- **프로필 사진/이름**: 사이드바 상단부 HTML 수정
+- **소셜 링크**: GitHub, LinkedIn, Email 링크 수정
+- **색상/폰트**: 파일 상단의 `<style>` 태그 내부 수정
+  - `--primary-color`: 메인 색상
+  - `--accent-color`: 강조 색상 (링크, 밑줄 등)
+
+### 3. 프로필 사진 교체
+- 사진 파일 위치: `assets/portfolio.png`
+- 새로운 사진을 위 경로에 덮어쓰거나, `_layouts/default.html`에서 파일 경로를 수정하세요.
+
+### 4. 사이트 기본 설정
+- `_config.yml`: 사이트 제목, 기본 설정 등 (크게 건드릴 일은 없습니다.)
+
+---
+
+## 📂 Project Structure
+
 ```
-
-## Installation
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "plainwhite"
+.
+├── index.md             # [MAIN] 메인 콘텐츠 (About, Experience, Publications...)
+├── _layouts/
+│   └── default.html     # [LAYOUT] 사이드바, HTML 구조, CSS 스타일
+├── _config.yml          # [CONFIG] Jekyll 설정
+├── assets/              # [ASSETS] 이미지 등 리소스 저장소
+└── README.md            # 매뉴얼 (This file)
 ```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: plainwhite
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install plainwhite
-
-## Usage
-
-The "plainwhite" key in \_config.yml is used to customize the theme data.
-
-```yaml
-plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
-  date_format: "%b %-d, %Y"
-
-  social_links:
-    twitter: thelehhman
-    github: thelehhman
-    linkedIn: in/thelehhman # format: locale/username
-```
-
-**Updating Placeholder Image**
-
-The placeholder portfolio image can be replaced by the desired image by placing it as `assets/portfolio.png` in your jekyll website.
-
-**Comments (Disqus)**
-
-Comments on posts can be enabled by specifying your disqus_shortname under plainwhite in `_config.yml`. For example,
-
-```yaml
-plainwhite:
-  disqus_shortname: games
-```
-
-**Google Analytics**
-
-It can be enabled by specifying your analytics id under plainwhite in `_config.yml`
-
-```yaml
-plainwhite:
-  analytics_id: "< YOUR ID >"
-```
-
-**Sitemap**
-
-It can be toggled by the following line to under plainwhite in `_config.yml`
-
-```yaml
-plainwhite:
-  sitemap: true
-```
-
-**Excerpts**
-
-Excerpts can be enabled by adding the following line to your `_config.yml`
-
-```yaml
-show_excerpts: true
-```
-
-**Layouts**
-
-- Home
-- Page
-- Post
-
-**Navigation**
-
-Navigation can be enabled by adding the following line to your `_config.yml`
-
-```yaml
-plainwhite:
-  navigation:
-    - title: My Work
-      url: "/my-work"
-    - title: Resume
-      url: "/resume"
-```
-
-**Multiline tagline**
-
-Tagline can be multiline in this way
-
-```yaml
-plainwhite:
-  tagline: |
-  First Line. 
-
-  Second Line. 
-
-  Third Line.
-```
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/thelehhman/plainwhite-jekyll. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `plainwhite.gemspec` accordingly.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## More themes
-
-- [Texture](https://github.com/thelehhman/texture)

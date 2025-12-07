@@ -2,7 +2,7 @@ title: Taehyun Kim
 author: Taehyun Kim
 email: taehyunkim1527@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Hello.
+  AI Systems Researcher specializing in Distributed Training, SmartNICs, and Storage Acceleration. Software Engineer at MangoBoost.
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -11,10 +11,20 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Taehyun Kim
-  tagline: Ph.D. Candidate
+  tagline: Systems Software Engineer specializing in AI Infrastructure, DPU, and Storage Systems.
   email: taehyunkim1527@gmail.com
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
+
+  navigation:
+    - title: About
+      url: /#about
+    - title: Experience
+      url: /#experience
+    - title: Projects
+      url: /#projects
+    - title: Publications
+      url: /#publications
 
   # generate social links in footer
   social_links:

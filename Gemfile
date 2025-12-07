@@ -2,3 +2,7 @@
 
 source "https://rubygems.org"
 gemspec
+
+gem "webrick"
+gem "bigdecimal"
+gem "logger"
